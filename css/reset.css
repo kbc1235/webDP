@@ -1,0 +1,62 @@
+@charset "utf-8";
+/*-------------------------------------------------------------------
+    파일정의 : 초기화
+    분류순서 : @웹폰트, @초기화
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+    @웹폰트
+-------------------------------------------------------------------*/
+@font-face {font-family:"NotoSans"; font-weight:100; src:url('../../common/fonts/NotoSans-Thin.eot'); src:local('※'), url('../../common/fonts/NotoSans-Thin.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-Thin.woff') format('woff');}
+@font-face {font-family:"NotoSans"; font-weight:200; src:url('../../common/fonts/NotoSans-DemiLight.eot'); src:local('※'), url('../../common/fonts/NotoSans-DemiLight.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-DemiLight.woff') format('woff');}
+@font-face {font-family:"NotoSans"; font-weight:300; src:url('../../common/fonts/NotoSans-Light.eot'); src:local('※'), url('../../common/fonts/NotoSans-Light.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-Light.woff') format('woff');}
+@font-face {font-family:"NotoSans"; font-weight:400; src:url('../../common/fonts/NotoSans-Regular.eot'); src:local('※'), url('../../common/fonts/NotoSans-Regular.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-Regular.woff') format('woff');}
+@font-face {font-family:"NotoSans"; font-weight:500; src:url('../../common/fonts/NotoSans-Medium.eot'); src:local('※'), url('../../common/fonts/NotoSans-Medium.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-Medium.woff') format('woff');}
+@font-face {font-family:"NotoSans"; font-weight:700; src:url('../../common/fonts/NotoSans-Bold.eot'); src:local('※'), url('../../common/fonts/NotoSans-Bold.eot?#iefix') format('embedded-opentype'), url('../../common/fonts/NotoSans-Bold.woff') format('woff');}
+ 
+/*-------------------------------------------------------------------
+    @초기화
+-------------------------------------------------------------------*/
+html, body, div, ul, ol, dl, li, dt, dd, p, h1, h2, h3, h4, h5, h6, table, thead, tbody, tr, th, td, caption, address,
+canvas, details, figure, figcaption, footer, header, menu, nav, section, article, aside,
+form, fieldset, button, select, textarea, input, fieldset, legend, label, a, span, strong, em, address, dfn, small, i, b, ::before, ::after {margin:0; padding:0; border:0; list-style:none; color:inherit; font-style:normal; font-size:100%; font-weight:inherit; font-family:inherit; line-height:inherit; word-break:inherit; word-wrap:inherit; box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box;}
+article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section {display:block;}
+body {font-family:"NotoSans", "Dotum", "Dotumche", "돋움", "돋움체", "Arial"; font-size:14px; font-weight:400; line-height:1; word-break:keep-all; word-wrap:word-break; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none;}
+html[lang=ja] body, html[lang=zh] body {word-break:normal;}
+[hidden], hr {display:none;}
+img {vertical-align:middle;}
+button {background-color:transparent; cursor:pointer;}
+b, strong {font-weight:normal;}
+fieldset, iframe {width:100%;}
+img, a, frame, iframe, fieldset {border:0;}
+a {text-decoration:none;}
+table {width:100%; border-spacing:0; border-collapse:collapse;}
+caption {height:1px; overflow:hidden;}
+legend {position:absolute; left:-9999em; top:-9999em;}
+button {overflow:hidden; background-color:transparent; cursor:pointer;}
+button::-moz-focus-inner {border:0px; padding:0px;}
+select {appearance:none; -webkit-appearance:none; -moz-appearance:none; -o-appearance:none;}
+select::-ms-expand {display:none;}
+input::-ms-clear,
+input::-ms-reveal {display:none; width:0; height:0;}
+input::search-decoration,
+input::search-cancel-button,
+input::search-results-button,
+input::search-results-decoration {display:none;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {display:none;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {-webkit-appearance:none; margin:0;}
+input::-webkit-calendar-picker-indicator {-webkit-appearance:none;}
+.dv-android [tabindex='0']:focus,
+.dv-android a:focus,
+.dv-android button:focus,
+.dv-android input:focus,
+.dv-android textarea:focus,
+.dv-android select:focus {outline:0;}
+.dv-ios [tabindex='0'],
+.dv-ios a,
+.dv-ios button,
+.dv-ios input,
+.dv-ios textarea,
+.dv-ios select {-webkit-tap-highlight-color:transparent;}
