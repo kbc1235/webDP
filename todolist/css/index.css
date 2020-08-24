@@ -1,0 +1,40 @@
+
+@font-face { font-family: 'TTTogether'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'paybooc-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+body{background: #111; color: #fff;}
+/*h1{color:#34495e; transition: color 0.5s ease-in-out;}
+.clickd{color:#7f8c8d}
+.btn{cursor: pointer;} */
+@keyframes fadeIn{0%{opacity: 0;}100%{opacity: 100%;}}
+.form,.greetings{display: none;}
+.showing{display: block;}
+.bgImage{position: absolute;top:0;left: 0;width: 100%;height: 100%;z-index: -1;animation: fadeIn .5s linear;}
+
+
+.container{position: relative; width: 100%;height: 100vh;background-color: rgba(0, 0, 0, 0.5);}
+.container_wrapper{max-width: 1200px;height: 100%;;margin:  0 auto;position: relative;text-align: center;}
+.inner{position: absolute;top: 50%; left: 50%;transform: translate(-50%,-50%);}
+.js-clock .js-title{font-size: 10rem;color: #fff; font-family: 'TTTogether';}
+.js-clock{margin-bottom: 50px;}
+
+.js-form{width: 100%;}
+.js-form input,.js-greetings{width: 100%;color: #fff; background: none;padding: 20px;margin-bottom:30px ;border-bottom: 2px solid #fff;text-align: center; font-family: 'paybooc-Bold';font-size: 1.5rem;}
+.js-form input:focus{outline:none;}
+.js-form input::placeholder{color: #fff;font-size: 1.5rem;}
+.js-form input:focus::placeholder{opacity: 0; transition: all .5s;}
+.js-greetings {font-size: 2rem;}
+
+.js-todoForm input{width: 100%;color: #fff; background: none;padding: 20px;margin-bottom:30px ;border-bottom: 2px solid #fff;text-align: center; font-family: 'paybooc-Bold';font-size: 1.5rem;}
+.js-todoForm input:focus{outline:none;}
+.js-todoForm input::placeholder{color: #fff;font-size: 1.5rem;}
+.js-todoForm input:focus::placeholder{opacity: 0; transition: all .5s;}
+
+.js-weather{position: absolute; top:20px;right: 20px;;color: #fff;font-size:2rem;font-family: 'paybooc-Bold';}
+
+.js-todoList{width: 100%;max-height:200px;overflow-y: auto;transition: all .5s;}
+.js-todoList::-webkit-scrollbar {width: 4px;border-radius: 20px;}
+.js-todoList::-webkit-scrollbar-thumb {background-color: #e1e1e1;border-radius: 20px;}
+.js-todoList::-webkit-scrollbar-track {background-color:rgba(0, 0, 0, 0.2);border-radius: 20px;}
+.js-todoList a{display: inline-block;width: 20px;margin:0 10px;color: rgba(255, 0, 0, 0.8);text-align: center;}
+.js-todoList li{width: 100%;padding: 10px 0;text-align: left;font-size: 1.5rem; color: #fff;font-family: 'paybooc-Bold';transition: all 0.5s;border-bottom: 1px solid #e1e1e1;}
+.js-todoList li:last-child{border-bottom: 0;}
