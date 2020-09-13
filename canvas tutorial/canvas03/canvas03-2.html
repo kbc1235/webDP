@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <h1>requestAnimationFrame</h1>
+    <h1>setInterval</h1>
     <canvas class="canvas" width="500" height="300"></canvas>
     <script>
         //캔버스 가져오기
@@ -21,23 +21,13 @@
       const context = canvas.getContext('2d');
 
       let xPos = 10; // 기본 x좌표
-      let count = 0;
 
       function draw(){
-          if(count % 30 === 0 ){
           context.clearRect(0,0,canvas.width, canvas.height)
           context.beginPath();
           context.arc(xPos, 150, 10, 0, Math.PI*2, false);
           context.fill();
-          xPos += 10; // x좌표 10씩증가
-
-        }
-        count++;
-        requestAnimationFrame(draw); // 기본 60프레임
-
-          //속도정하려면 나누기 연산자 사용
-
-
+          xPos += 1; // x좌표 1씩증가         
       }
       
       /*
@@ -45,7 +35,11 @@
       window 생략 가능
       */
 
-      draw();
+      setInterval(draw, 50);
+
+      /*
+      셋인터벌은 성능문제로 잘안씀
+      */
         
 
     </script>
