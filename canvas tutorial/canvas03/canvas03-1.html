@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            background: #eee;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>requestAnimationFrame</h1>
+    <canvas class="canvas" width="500" height="300"></canvas>
+    <script>
+        //캔버스 가져오기
+      const canvas = document.querySelector('.canvas');
+        //캔버스 컨텍스트 객체가져오기
+      const context = canvas.getContext('2d');
+
+      let xPos = 10; // 기본 x좌표
+
+      function draw(){
+          context.clearRect(0,0,canvas.width, canvas.height)
+          context.beginPath();
+          context.arc(xPos, 150, 10, 0, Math.PI*2, false);
+          context.fill();
+          xPos += 1; // x좌표 1씩증가
+
+          requestAnimationFrame(draw);
+      }
+      
+      /*
+      window.requestAnimationFrame() 
+      window 생략 가능
+      */
+
+      draw();
+        
+
+    </script>
+</body>
+</html>
