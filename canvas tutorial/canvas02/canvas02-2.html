@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            background: #eee;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>패스그리기</h1>
+    <canvas class="canvas" width="600" height="400"></canvas>
+    <script>
+
+        /*
+        beginPath -> 선의 시작 알려주기
+        moveTo -> 붓을 옴기는것
+        lineTo -> 선을 만드는것
+        closePath -> 패스 끝
+        */
+
+        //캔버스 가져오기
+      const canvas = document.querySelector('.canvas');
+        //캔버스 컨텍스트 객체가져오기
+      const context = canvas.getContext('2d');
+
+       /*
+         beginPath,moveTo,lineTo 
+         설정해도 보이지는 않음 
+         fill이나 strocke를 설정해줘야 화면 출력
+
+
+         beginPath를 잘쓰면 closePath 생략가능
+       */
+      context.beginPath();
+      context.moveTo(100,100);
+      context.lineTo(300,200);
+      context.stroke();
+      context.closePath();
+
+       
+        
+
+    </script>
+</body>
+</html>

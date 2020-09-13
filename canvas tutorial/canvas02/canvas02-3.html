@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            background: #eee;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>패스그리기</h1>
+    <canvas class="canvas" width="600" height="400"></canvas>
+    <script>
+
+        /*
+        beginPath -> 선의 시작 알려주기
+        arc -> 호 그리기
+        closePath -> 선의 끝 알려주기
+        */
+
+        //캔버스 가져오기
+      const canvas = document.querySelector('.canvas');
+        //캔버스 컨텍스트 객체가져오기
+      const context = canvas.getContext('2d');
+        
+      context.arc(300, 200, 50, 0 ,360);
+      // arc(중심위치 x,중심위치 y, 반지름 크기, 시작각도, 끝각도(라디안각도 입력))
+      // 360도 라디안 값 = 2팡
+      // 1도는 180분의 파이
+       
+        
+
+    </script>
+</body>
+</html>
