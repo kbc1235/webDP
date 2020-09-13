@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tyle.css">
+</head>
+<body>
+    <canvas>이 브라우저는 캔버스를 지원하지 않습니다.</canvas>
+
+    <script>
+       const canvas = document.querySelectorAll('canvas');
+       if(canvas.getContext){
+        console.log('캔버스지원x')
+       }else {
+           console.log('캔버스지원')
+       }
+    </script>
+</body>
+</html>
