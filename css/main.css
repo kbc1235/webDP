@@ -3,19 +3,32 @@
     파일정의 : 메인 스타일
     속성순서 : 레이아웃, 사이징, 박스모양, 글자모양, 문단모양, 기타모양
 -------------------------------------------------------------------*/
-/* nav */
-#nav {position: fixed; left: 0; top: 0; width: 100%; background-color: rgba(0,0,0,0.3);z-index: 100;}
-#nav h1 {float: left; color: #fff; font-size: 40px; padding:17px 15px;}
-#nav ul {float: right; padding-right: 10px; }
-#nav ul li {display: inline; }
-#nav ul li a {display: inline-block; padding: 30px 15px; color: #fff; font-weight: bold; ; text-transform: capitalize;}
+/* 공통영역 */
+.inner{max-width: 1400px; height: 100%;margin: 0 auto;position: relative;padding: 100px 0;}
 
-#contents {text-align: center; color: #fff;}
-#contents > div {width: 100%;height: 100vh; line-height: 100vh;;background-size: cover;background-position:center;overflow: hidden;position: relative;}
-#contents > div.content > img{position: relative;width:100%;z-index: 10;}
-.bg_blur::after{position: absolute;top:0;left: 0;right: 0;bottom: 0;background:inherit;z-index: 1;filter: blur(3px);-webkit-filter: blur(5px);content: '';}
-/* section */
-#section1 {background:url(../images/@img01.jpg) no-repeat;}
-#section2 {background:url(../images/@img02.jpg) no-repeat;}
-#section3 {background:url(../images/@img03.jpg) no-repeat;}
-#section4 {background:url(../images/@img04.jpg) no-repeat;}
+/* 헤어영역 */
+#header{display: flex; width: 100%;padding: 20px;background-color: #f4f4f4;box-shadow: 1px 1px 5px rgba(0,0,0,.15);}
+#header h1{width: 150px; height: 40px;background-color: #777ffe;border-radius: 10px;text-indent: -9999px;cursor: pointer;}
+#nav{margin-left: auto;}
+#nav ul{height: 100%;padding-top: 15px;}
+#nav ul::after{display: block;clear: both;content: "";}
+#nav ul li{width: 80px;height: 10px;float: left; background: cornflowerblue;border-radius: 10px;margin-right: 10px;text-indent: -9999px;cursor: pointer;}
+#nav ul li:last-child{margin-right: 0;}
+
+
+/* 비쥬얼 영역 */
+.visual{width: 100%;height: 500px;;background: #1c0949;}
+.visual .inner{padding: 0;}
+.visual .text_box{width: 40%;height: 300px;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);background: #9982cf;border-radius: 10px;}
+
+
+/* 컨텐츠영역 */
+.contents .title{font-size:30px;font-weight: bold;text-align: center;margin-bottom: 50px;}
+.contents .cont_wrapper{display: flex;flex-wrap: wrap;}
+.contents .cont_wrapper .item{width: 24%;height: 200px;background: #777ffe;margin-right: 1%;margin-bottom: 1%;border-radius: 10px;position: relative;}
+.contents .cont_wrapper .item:nth-of-type(4n+1){margin-left: 0.5%;}
+.contents .cont_wrapper .item:nth-of-type(4n+4){margin-right: 0;}
+.contents .cont_wrapper .item::after{display: block;width: 100%;height: 100%;position: absolute;border-top: 1px solid #4a54e0;border-bottom: 1px solid #4a54e0;border-radius: 10px;opacity: 0;transition: all .5s;content:'';}
+.contents .cont_wrapper .item::before{display: block;width: 100%;height: 100%;position: absolute;border-left: 1px solid #4a54e0;border-right: 1px solid #4a54e0;border-radius: 10px;opacity: 0;transition: all .5s;content:'';}
+.contents .cont_wrapper .item:hover::after{height: 100%;opacity: 1;}
+.contents .cont_wrapper .item:hover::before{width: 100%;opacity: 1;}
