@@ -1,5 +1,5 @@
 *{margin: 0;padding: 0;list-style: none;}
-.container{max-width: 1400px;margin: 0 auto;padding: 20px 0;}
+.container{max-width: 1400px;margin: 0 auto;padding: 20px 10px;}
 .container .title{padding: 30px;}
 .container .title h3{margin-bottom: 20px;font-size:40px;text-align: center;}
 .container .title .food_btn{display: block;margin: 0 auto;padding: 20px;font-weight: bold;}
