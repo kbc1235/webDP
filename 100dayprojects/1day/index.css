@@ -1,0 +1,19 @@
+*{margin: 0;padding: 0;list-style: none;}
+.container{max-width: 1400px;margin: 0 auto;padding: 20px 0;}
+.container .title{padding: 30px;}
+.container .title h3{margin-bottom: 20px;font-size:40px;text-align: center;}
+.container .title .food_btn{display: block;margin: 0 auto;padding: 20px;font-weight: bold;}
+
+#food .box_wrapper{display: flex;}
+#food .box_wrapper h5{font-size: 20px; margin-bottom: 10px;}
+#food .box_wrapper .box1{width:50%;margin-right: calc(50% - 49%);}
+#food .box_wrapper .box1 img{width:100%;margin-bottom: 30px;}
+#food .box_wrapper .box1 p{font-size: 20px;margin-bottom: 20px;}
+
+#food .box_wrapper .box2{width:50%}
+#food .box_wrapper .box2 h4{font-size: 30px; margin-bottom: 20px;}
+
+#food .video_wrapper h5{font-size: 30px;margin-bottom: 20px;text-align: center;}
+#food .video_wrapper .video{position: relative;width: 100%;padding-top: 55%;}
+#food .video_wrapper .video iframe{position: absolute;width: 100%;height: 100%;top: 0;left: 0;;}
+
